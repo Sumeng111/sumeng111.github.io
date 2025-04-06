@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceramic & Art</title>
+    <link rel="stylesheet" href="common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Highgate:wght@900&display=swap" rel="stylesheet">
+<style>
+    /* home page */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-container {
+    position: relative;
+    
+    margin: 0 auto;
+}
+
+.decor-item {
+    position: absolute;
+    max-width: 120px;
+    height: auto;
+}
+
+.cat-bowl {
+    left: 41px;
+    bottom: -36px;
+    max-width: 150px;
+}
+
+.black-ke {
+    right: 117px;
+    width: 70px;
+    bottom: -45px;
+}
+
+.white-vase {
+    left: 498px;
+    top: 93px;
+    max-width: 60px;
+}
+
+.small-pot {
+    left: 56%;
+    top: 47px;
+    transform: translateX(-50%);
+    max-width: 60px;
+}
+
+.black-kettle {
+    right: 159px;
+    bottom: 91px;
+    max-width: 80px;
+}
+
+.welcome-text {
+    position: relative;
+    z-index: 2;
+}
+
+.welcome-text h1 {
+    font-family: 'Highgate', sans-serif;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ceramic-figures {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.figures-image {
+    max-width: 70%;
+    height: auto;
+}
+
+.bottom-text {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.bottom-text h2 {
+    font-family: 'Highgate', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.4;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-section {
+    display: flex;
+    gap: 40px;
+    padding: 60px 40px;
+    
+    margin: 0 auto;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.intro-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.process-image {
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.final-section {
+    padding: 60px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.conclusion-text {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.ceramic-showcase {
+    padding: 40px 20px;
+    
+    margin: 0 auto;
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.showcase-item {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.showcase-item:hover {
+    transform: translateY(-5px);
+}
+
+.showcase-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+/* responsive layout */
+@media (max-width: 768px) {
+    .welcome-text h1 {
+        font-size: 36px;
+    }
+
+    .bottom-text h2 {
+        font-size: 24px;
+    }
+
+    .content-section {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+    }
+
+    .conclusion-text {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .decor-item {
+        max-width: 80px;
+    }
+
+    .cat-bowl {
+        left: 20px;
+        max-width: 100px;
+    }
+
+    .white-vase {
+        right: 30px;
+        max-width: 70px;
+    }
+
+    .small-pot {
+        max-width: 40px;
+    }
+
+    .black-kettle {
+        right: 40px;
+        max-width: 60px;
+    }
+
+    .showcase-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .showcase-image {
+        height: 300px;
+    }
+} 
+</style>
+</head>
+<body>
+    <div class="top-banner">
+        <div class="banner-content">
+            <!-- group 1 -->
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <!-- group 2 -->
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <!-- group 3 -->
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+        </div>
+    </div>
+    <header>
+        <div class="logo">Ceramic</div>
+        <nav>
+            <div class="menu-button">MENU</div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="index.html">HOME</a></li>
+                    <li class="menu-item"><a href="history.html">HISTORY</a></li>
+                    <li class="menu-item"><a href="technique.html">TECHNIQUES</a></li>
+                    <li class="menu-item"><a href="ceramics.html">BEGINNER'S GUIDE</a></li>
+                    <li class="menu-item"><a href="works-inspiration.html">WORKS & INSPIRATIC</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-container">
+        <main>
+            <section class="hero">
+                <div class="welcome-container">
+                    <img src="images/a07cbdcb3ec733f491804543f8af9c6.png" alt="Ceramic Cat with Bowl" class="decor-item cat-bowl">
+                    <img src="images/c26c6776ac8fd8f56121f697560e8e0.png" alt="White Ceramic Vase" class="decor-item white-vase">
+                    <img src="images/ec76e41ae6e9306e86b6df4dfeca60f.png" alt="Small Ceramic Pot" class="decor-item small-pot">
+                    <img src="images/9c25b089a3cf62b54dfad3f9009752b.png" alt="Black Ceramic Kettle" class="decor-item black-kettle">
+                    <img src="images/433ab2f74b33130ba10b66f9b6f3353.png" alt="Black Ceramic Kettle" class="decor-item black-ke">
+                    <div class="welcome-text">
+                        <h1>WELCOME TO THE<br>WORLD OF CERAMICS!</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ceramic-figures">
+                <img src="images/5.png" alt="Ceramic Figures" class="figures-image">
+            </section>
+
+            <section class="bottom-text">
+                <h2>THE CHARM OF CERAMICS: AN ART OF CREATION AND HEALING</h2>
+            </section>
+
+            <section class="ceramic-showcase">
+                <div class="showcase-grid">
+                    <div class="showcase-item">
+                        <img src="images/1.jpg" alt="Ceramic Cat Bowl" class="showcase-image">
+                    </div>
+                    <div class="showcase-item">
+                        <img src="images/2.jpg" alt="White Ceramic Sculpture" class="showcase-image">
+                    </div>
+                    <div class="showcase-item">
+                        <img src="images/3.jpg" alt="Ceramic Vases with Hand" class="showcase-image">
+                    </div>
+                </div>
+            </section>
+            <section class="content-section">
+                <div class="text-content">
+                    <p class="intro-text">
+                        Ceramics is an exceptional art form, a communication between the hands and the material, and also a deep spiritual bond between the soul and nature. The soft clay embracing your fingers makes you feel something unique when you cover wide distances within it. Its weight seems to pause for a moment. Its shape keeps a specific meaning. Every single piece of this art is one of a kind, feeling the emotions and the stories of its creator. You're about to discover the extraordinary power of ceramics as a way to peace and satisfaction in creating through the process, whether it is shaping an ordinary cup or a highly complex piece.
+                    </p>
+                    <p class="intro-text">
+                        What is wonderful about ceramics is that there is truly space for each of us-either you are new to this medium or an experienced artist, you can find your own way in the clay world. It isn't only an art form but it's also a remedy that delivers occasional serenity to your demanding schedule. From kneading clay to wheel throwing, from glazing to firing, like a voyage into a strange new land, every part of the process brings its own features.
+                    </p>
+                </div>
+                <div class="image-content">
+                    <img src="images/4.png" alt="Pottery Making Process" class="process-image">
+                </div>
+            </section>
+
+            
+<section class="final-section">
+    <p class="conclusion-text">
+        In case you want to engage in an activity that brings together creativity and tranquility, ceramics is the excellent selection for you. It is not merely a craft but rather a lifestyle that embraces the opportunities of limitless horizons. This is where you will read what awaits you in the ceramics journey—comprehensive tutorials, inspiring stories, and a bonded community of fellow ceramics enthusiasts. Be sure to drop by and find out for yourself! Let ceramics be your source of artistic spice!
+    </p>
+    <p style="text-align: center; margin-top: 30px;">
+    <a href="contact.html"></a>
+    </p>
+</section>
+
+        <footer class="site-footer">
+            <div class="footer-nav">
+                <div class="nav-item">
+                    <a href="history.html" style="text-decoration: none; color: inherit;">
+                        <img src="images/8fe7d0a985c463a42a355ecbe663efb.jpg" alt="History Icon" class="nav-icon">
+                        <span class="nav-text">HISTORY</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="technique.html" style="text-decoration: none; color: inherit;">
+                        <img src="images/4e58466d01d37d915c4a3f2cb57386a.jpg" alt="Techniques Icon" class="nav-icon">
+                        <span class="nav-text">TECHNIQUES</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="ceramics.html" style="text-decoration: none; color: inherit;">
+                        <img src="images/ca49725b42a9807edc9852532d0b6f0.jpg" alt="Beginner's Guide Icon" class="nav-icon">
+                        <span class="nav-text">BEGINNER'S GUID</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="works-inspiration.html" style="text-decoration: none; color: inherit;">
+                        <img src="images/5ac4f509b1f6b195889312627dc57ea.jpg" alt="Works & Inspiration Icon" class="nav-icon">
+                        <span class="nav-text">WORKS & INSPIRATIO</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <div class="contact-info">
+                    <a href="mailto:lis@ocaud.ca" class="contact-link">lis@ocaud.ca</a>
+                    <div class="school-name">OCAD university</div>
+                </div>
+                <div class="footer-line"></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 

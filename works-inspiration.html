@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceramic & Art - WORKS & INSPIRATIC</title>
+    <link rel="stylesheet" href="common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Highgate:wght@900&display=swap" rel="stylesheet">
+    <style>
+.page-container {
+    margin: 150px auto;
+    padding: 150px 20px;
+}
+
+
+.back-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 30px;
+    left: 11%;
+    top: 22.5%;
+}
+
+.artist-profile {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.image-container {
+    flex: 1;
+    position: relative;
+    max-width: 40%;
+}
+
+.main-work-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.artist-image {
+    position: absolute;
+    bottom: -177px;
+    right: -280px;
+    width: 91%;
+    height: auto;
+    z-index: 1;
+}
+
+.text-content {
+    flex: 1;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    font-family: 'Highgate', sans-serif;
+    font-style: italic;
+}
+
+.artist-description {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #333;
+    margin-right: 40px;
+}
+
+.artist-description p {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .artist-profile {
+        flex-direction: column;
+    }
+
+    .image-container {
+        max-width: 100%;
+        margin-bottom: 120px;
+    }
+
+    .artist-image {
+        right: -205px;
+        width: 68%;
+        width: 60%;
+    }
+
+    .text-content {
+        padding-top: 0;
+        max-width: 100%;
+    }
+} 
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Architects Daughter', cursive;
+            background: #fff;
+            color: #333;
+            width: 100%;
+            
+            margin: auto;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Works & Inspiration  */
+        .main-content {
+            position: relative;
+            min-height: 100vh;
+            padding: 40px;
+            overflow: hidden;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .works-container {
+            position: relative;
+            width: 100%;
+            height: 1000px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            margin-left: -40px;
+        }
+
+        .works-title {
+            text-align: center;
+            font-size: 80px; 
+            font-weight: bold;
+            color: #000;
+            text-transform: uppercase;
+            z-index: 100;
+            position: relative;
+            letter-spacing: 3px; 
+            white-space: nowrap;
+        }
+
+        .ceramic-work {
+            position: absolute;
+            z-index: 1;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+            cursor: pointer;
+        }
+        
+        .ceramic-work img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* locate each work */
+        .work-1 {
+            left: 10%;
+    top: 53%;
+    width: 223px;
+            transform: rotate(-10deg);
+        }
+
+        .work-2 {
+            left: 15%;
+            top: 31%;
+            width: 150px; 
+            transform: rotate(5deg);
+        }
+
+        .work-3 {
+            left: 42%;
+            top: 36%;
+            width: 140px; 
+        }
+
+        .work-4 {
+            right: 5%;
+            top: 25%;
+            width: 180px; 
+            transform: rotate(-5deg);
+        }
+
+        .work-5 {
+            right: 15%;
+    top: 53%;
+    width: 252px;
+            transform: rotate(8deg);
+        }
+
+        .work-6 {
+            left: 33%;
+    bottom: 30%;
+    width: 260px;
+            transform: rotate(-8deg);
+        }
+
+        .work-7 {
+            right: 37%;
+            bottom: 50%;
+            width: 80px; 
+            transform: rotate(5deg);
+        }
+
+        /* Hover effect */
+        .ceramic-work:hover {
+            transform: scale(1.2) !important; 
+            z-index: 101;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
+            transition: all 0.4s ease;
+        }
+
+        /* Click effect */
+        .ceramic-work:active {
+            transform: scale(0.95) !important;
+        }
+
+        .site-footer {
+            margin-top: 50px;
+            padding: 30px 0;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .footer-nav {
+            display: flex;
+            justify-content: space-around;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .nav-icon {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border-radius: 50%;
+        }
+        
+        .nav-text {
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .contact-link {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .school-name {
+            font-size: 12px;
+        }
+        
+        .footer-line {
+            width: 100%;
+            max-width: 800px;
+            height: 1px;
+            background-color: #ddd;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-banner">
+        <div class="banner-content">
+            <!-- group 1 -->
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <!-- group 2 -->
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <!-- group 3 -->
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+        </div>
+    </div>
+    
+    <header>
+        <div class="logo">Ceramic</div>
+        <nav>
+            <div class="menu-button">MENU</div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="index.html">HOME</a></li>
+                    <li class="menu-item"><a href="history.html">HISTORY</a></li>
+                    <li class="menu-item"><a href="technique.html">TECHNIQUES</a></li>
+                    <li class="menu-item"><a href="ceramics.html">BEGINNER'S GUIDE</a></li>
+                    <li class="menu-item"><a href="works-inspiration.html">WORKS & INSPIRATIC</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="main-content">
+        <div class="works-container">
+            <h1 class="works-title">WORKS & INSPIRATIC</h1>
+            
+            <a href="1.html" class="ceramic-work work-1">
+                <img src="images/1b55629f1a4ac8f9122771d4bf8d80d.png" alt="Ceramic Vase">
+            </a>
+            
+            <a href="1.html" class="ceramic-work work-2">
+                <img src="images/157f2dfeb17b6b53b3a044d9fe5aef0.png" alt="Ceramic Sculpture">
+            </a>
+            
+            <a href="works.html" class="ceramic-work work-3">
+                <img src="images/8069062bb51ef0f89df8713180cf5ac.png" alt="Black and White Ceramic">
+            </a>
+
+            <a href="works.html" class="ceramic-work work-7">
+                <img src="images/af4500c4682b53de8af2023e8e864e1.png" alt="Small Ceramic Work">
+            </a>
+
+            <a href="artist-detail.html" class="ceramic-work work-4">
+                <img src="images/c5ccc844d0d0bda586d71d923266a3a.png" alt="Red Ceramic Figure">
+            </a>
+            
+            <a href="artist-detail.html" class="ceramic-work work-5">
+                <img src="images/5.png" alt="Ceramic Figures">
+            </a>
+            
+            <a href="2.html" class="ceramic-work work-6">
+                <img src="images/a9b00b3882286427b709afe35685cf4.png" alt="Large Ceramic Sculpture">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.ceramic-work').forEach(work => {
+            work.addEventListener('mouseover', () => {
+                work.style.transform = 'scale(1.1)';
+                work.style.zIndex = '10';
+            });
+            
+            work.addEventListener('mouseout', () => {
+                work.style.transform = 'scale(1)';
+                work.style.zIndex = '1';
+            });
+        });
+    </script>
+</body>
+</html> 

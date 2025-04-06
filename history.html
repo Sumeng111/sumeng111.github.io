@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceramic history - Ceramic & Art</title>
+    <link rel="stylesheet" href="common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Highgate:wght@900&display=swap" rel="stylesheet">
+<style>
+    /* Ceramic History page */
+
+.logo-link {
+    text-decoration: none;
+    color: #333;
+}
+
+/* top of Ceramic History */
+.history-hero {
+    position: relative;
+    height: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    background: url('images/f6cb9e4e9c858e9d269f152722b60b5.jpg') center/cover no-repeat;
+    overflow: hidden;
+    margin-bottom: 60px;
+    width: 100%;
+    padding: 100px 0;
+}
+
+
+.history-title {
+    position: relative;
+    z-index: 2;
+    width: 80%;
+    max-width: 900px;
+    margin-bottom: 80px;
+}
+
+.history-title h1 {
+    font-family: 'Highgate', sans-serif;
+    font-weight: 900;
+    font-size: 56px;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+}
+
+.history-title h2 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 28px;
+    color: #333;
+    font-weight: normal;
+}
+
+/* history text */
+.history-text {
+    position: relative;
+    z-index: 2;
+    font-family: 'Architects Daughter', cursive;
+    line-height: 1.8;
+    max-width: 800px;
+    width: 80%;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.history-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.history-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* history-content */
+.history-content {
+    display: none;
+}
+
+/* Ceramic Display */
+.ceramic-showcase {
+    padding: 20px 0 60px;
+}
+
+.pottery-display {
+    text-align: center;
+}
+
+.pottery-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* traditional Chinese ceramics */
+.chinese-ceramics {
+    padding: 60px 40px;
+    
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.section-title {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 40px;
+    color: #333;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.chinese-ceramics-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+    align-items: center;
+    width: 100%;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.ceramics-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.ceramic-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ceramic-image {
+    width: 100%;
+    height: auto;
+}
+
+.ceramic-caption {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
+    color: #333;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+
+.ceramics-description {
+    font-family: 'Architects Daughter', cursive;
+    line-height: 1.8;
+}
+
+.ceramics-description p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.ceramics-description p:last-child {
+    margin-bottom: 0;
+}
+
+.right-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tang-figurine {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.figurine-image {
+    width: 100%;
+    height: auto;
+}
+
+/* responsive design */
+@media (max-width: 992px) {
+    .chinese-ceramics {
+        min-height: auto;
+        padding: 60px 40px;
+    }
+
+    .chinese-ceramics-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .ceramics-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .right-content {
+        position: static;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .history-hero {
+        height: 1000px;
+    }
+    
+    .history-title h1 {
+        font-size: 36px;
+    }
+    
+    .history-title h2 {
+        font-size: 20px;
+    }
+    
+    .history-text p {
+        font-size: 16px;
+    }
+    
+    .chinese-ceramics {
+        padding: 40px 20px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    
+    .ceramics-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .ceramics-description p {
+        font-size: 16px;
+    }
+    
+    .right-content {
+        max-width: 100%;
+    }
+}
+
+/* traditional Japanese ceramics */
+.japanese-ceramics {
+    padding: 120px 40px;
+    
+    margin: 0 auto;
+}
+
+.japanese-ceramics .section-title {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 40px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.japanese-ceramics-content {
+    position: relative;
+    min-height: 800px;
+    padding: 0 40px;
+}
+
+.japanese-images {
+    position: relative;
+    height: 400px;
+}
+
+.ceramic-piece {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.shigaraki {
+    left: 0;
+    bottom: -30%;
+    transform: translateY(-50%);
+}
+
+.tea-set {
+    right: 8%;
+    top: 60%;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+.tea-set .tea-set-image{
+    transform: rotate(0deg);
+}
+.shigaraki-image,
+.tea-set-image {
+    width: 150px;
+    height: auto;
+    transform: rotate(-15deg);
+}
+
+.craftsman-image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: auto;
+    z-index: 2;
+    top: 0;
+}
+
+.image-caption {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #b87333;
+    border-radius: 50%;
+}
+
+.japanese-description {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.japanese-description p {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin: 0;
+}
+
+/* 响应式设计补充 */
+@media (max-width: 1200px) {
+    .japanese-ceramics-content {
+        padding: 0;
+    }
+
+    .craftsman-image {
+        width: 400px;
+    }
+
+    .shigaraki-image,
+    .tea-set-image {
+        width: 150px;
+    }
+}
+
+@media (max-width: 992px) {
+    .japanese-ceramics {
+        padding: 80px 20px;
+    }
+
+    .japanese-images {
+        height: auto;
+        margin-bottom: 60px;
+    }
+
+    .ceramic-piece,
+    .craftsman-image {
+        position: relative;
+        transform: none;
+        margin: 0 auto 30px;
+    }
+
+    .ceramic-piece {
+        align-items: center;
+        max-width: 400px;
+    }
+
+    .shigaraki-image,
+    .tea-set-image {
+        transform: none;
+    }
+
+    .craftsman-image {
+        width: 100%;
+        max-width: 400px;
+        display: block;
+    }
+
+    .japanese-description {
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .japanese-ceramics {
+        padding: 60px 20px;
+    }
+
+    .japanese-ceramics .section-title {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+
+    .japanese-description p {
+        font-size: 16px;
+    }
+}
+
+/* traditional European ceramics */
+.european-ceramics {
+    padding: 120px 40px;
+    
+    margin: 0 auto;
+}
+
+.european-ceramics .section-title {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 40px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.european-ceramics-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.european-pottery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.greek-pottery-image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin-left: -40px;
+}
+
+.european-pottery .image-caption {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
+    color: #333;
+    white-space: nowrap;
+    margin-left: -40px;
+}
+
+.european-description {
+    padding-right: 40px;
+}
+
+.european-description p {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin: 0;
+    text-align: left;
+}
+
+/* responsive design supplement */
+@media (max-width: 1200px) {
+    .european-ceramics-content {
+        padding: 0 20px;
+    }
+
+    .greek-pottery-image {
+        max-width: 400px;
+        margin-left: -20px;
+    }
+
+    .european-pottery .image-caption {
+        margin-left: -20px;
+    }
+
+    .european-description {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .european-ceramics {
+        padding: 80px 20px;
+    }
+
+    .european-ceramics-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0;
+    }
+
+    .european-pottery {
+        align-items: center;
+    }
+
+    .greek-pottery-image {
+        margin-left: 0;
+        max-width: 350px;
+    }
+
+    .european-pottery .image-caption {
+        margin-left: 0;
+    }
+
+    .european-description {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .european-ceramics {
+        padding: 60px 20px;
+    }
+
+    .european-ceramics .section-title {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+
+    .greek-pottery-image {
+        max-width: 100%;
+    }
+
+    .european-description p {
+        font-size: 16px;
+    }
+}
+
+</style>
+</head>
+<body>
+    <div class="top-banner">
+        <div class="banner-content">
+            <!-- group 1 -->
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <!-- group 2 -->
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <!-- group 3 -->
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+        </div>
+    </div>
+    <header>
+        <div class="logo">
+            <a href="index.html" class="logo-link">Ceramics</a>
+        </div>
+        <nav>
+            <div class="menu-button">MENU</div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="index.html">HOME</a></li>
+                    <li class="menu-item"><a href="history.html">HISTORY</a></li>
+                    <li class="menu-item"><a href="technique.html">TECHNIQUES</a></li>
+                    <li class="menu-item"><a href="ceramics.html">BEGINNER'S GUIDE</a></li>
+                    <li class="menu-item"><a href="works-inspiration.html">WORKS & INSPIRATIC</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-container">
+        <main>
+            <section class="history-hero">
+                <div class="history-title">
+                    <h1>THE HISTORY OF CERAMICS</h1>
+                    <h2>The Origin and Legacy of Ceramics</h2>
+                </div>
+                <div class="history-text">
+                    <p>
+                        Ceramics, one of humanity's earliest crafts, encompasses
+                        wisdom and culture from thousands of years. The clay,
+                        fired and hardened, proved to be highly durable and practical
+                        for the people of the Neolithic Age. Thus, pottery was
+                        required for storing food and water. Each culture's
+                        ceramics are characterized by unique styles and techniques,
+                        ranging from the Yangshao Culture of China to the Black-
+                        Figure Pottery of ancient Greece. Hence, ceramics are an
+                        integral part of our history.
+                    </p>
+                    
+                    <p>
+                        Ceramics evolves as a culture carrier as well as a tool for
+                        daily life. All of them mark the period reflecting its
+                        population's customs, art, and innovations in society. From
+                        ancient Chinese celadon to the Japanese tea ceremony's tea
+                        bowls, ceramics have offered a passage from the past to
+                        our more recent history.
+                    </p>
+                    
+                    <p>
+                        Currently, ceramics still holds the same position with
+                        numerous fans and followers. Its fabrication has now
+                        become a craft, which also is the symbol of culture and
+                        innovation. In this journey, we invite you to take an exploration
+                        of time. Initially, by discovering the roots of ceramics and
+                        subsequently the progress that has taken place throughout
+                        the ages. Finally, you will discover the immense possibilities still
+                        hidden in clay.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="chinese-ceramics">
+                <div class="chinese-ceramics-content">
+                    <div class="left-content">
+                        <h2 class="section-title">Traditional Chinese Ceramics</h2>
+                        <div class="ceramics-gallery">
+                            <div class="ceramic-item">
+                                <img src="images/9d97c07bb8a89d1182552c842441b3c.jpg" alt="彩陶" class="ceramic-image">
+                                <div class="ceramic-caption">
+                                    <span class="dot"></span> Colored Pottery From The Stone Age
+                                </div>
+                            </div>
+                            
+                            <div class="ceramic-item">
+                                <img src="images/48d09826d5554f6574fa3e1c9d0a8d1.jpg" alt="宋代青釉" class="ceramic-image">
+                                <div class="ceramic-caption">
+                                    <span class="dot"></span> The Blue Glaze Of The Song Dynasty
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ceramics-description">
+                            <p>
+                                Chinese ceramics are very ancient, and the earliest
+                                record features the Yangshao Culture of the Neolithic
+                                Age. Yangshao pottery, characterized by red clay and
+                                colourful patterns, embodies natural beauty, which was a
+                                desire of early humans. The Tang Dynasty defined the
+                                Tang Sancai style with yellow, green, and white glaze, later
+                                on commonly used as burial objects to symbolize
+                                prosperity and cultural diversity during the period.
+                            </p>
+                            
+                            <p>
+                                The Song Dynasty saw an exceptional rise in the popularity
+                                of celadon from this era. Its delicate surface and jade-like
+                                glaze, which were its key features, made it the most
+                                admired. Celadon fulfilled not only practical needs but also
+                                a spiritual role, and so, scholars and artists considered
+                                celadon an object of reverence.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="right-content">
+                        <div class="tang-figurine">
+                            <img src="images/49d2e1258522efb62af414051d335d3.png" alt="唐三彩" class="figurine-image">
+                            <div class="ceramic-caption">
+                                <span class="dot"></span> Tri-Colored Glazed Pottery Of The Tang Dynasty
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="japanese-ceramics">
+                <h2 class="section-title">Traditional Japanese Ceramics</h2>
+                <div class="japanese-ceramics-content">
+                    <div class="japanese-images">
+                        <div class="ceramic-piece shigaraki">
+                            <img src="images/0338a790fd30de6581b046589f1db8b.png" alt="Shigaraki Ware" class="shigaraki-image">
+                            <div class="image-caption">
+                                <span class="dot"></span> Shigaraki Ware
+                            </div>
+                        </div>
+                        
+                        <img src="images/9f404845d8d01eceedf6f4d72237b72.jpg" alt="Japanese Craftsman" class="craftsman-image">
+                        
+                        <div class="ceramic-piece tea-set">
+                            <img src="images/9b9ef630335f579f4331365887bbc1d.png" alt="Japanese Ceramic Tea Set" class="tea-set-image">
+                            <div class="image-caption">
+                                <span class="dot"></span> Japanese Ceramic Tea Set
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="japanese-description">
+                        <p>
+                            Japanese ceramics owes much to the beauty of tea culture. This
+                            feature embraces naturalism and rustic beauty. Apart from its
+                            functionality, tea ceremony utensils like tea bowls and teapots have an
+                            artistic value as well. Shigaraki Ware, an exclusive Japanese style, is also
+                            characterized by coarse texture and a natural glaze. It is commonly
+                            utilized in Japanese tea ceremonies, manifesting the philosophy of "wabi-
+                            sabi," which emphasizes imperfection. A striking feature of Arita Ware,
+                            so-called for its detailed paintings and white porcelain, is the masterful
+                            craftsmanship and the originality of Japanese ceramic art.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="european-ceramics">
+                <h2 class="section-title">Traditional European Ceramics</h2>
+                <div class="european-ceramics-content">
+                    <div class="european-pottery">
+                        <img src="images/49ae996d235ec6095f238e6d1e3e8ae.png" alt="Ancient Greek Black-Figure Pottery" class="greek-pottery-image">
+                        <div class="image-caption">
+                            <span class="dot"></span> Ancient Greek Black-Figure Pottery
+                        </div>
+                    </div>
+                    
+                    <div class="european-description">
+                        <p>
+                            European ceramics also boasts a rich history,
+                            with the Ancient Greek Black-Figure Pottery
+                            being a prime example. Mythical narratives are
+                            commonly found on this pottery, painted over
+                            red clay with black patterns on it. Its outline
+                            reflects the Greeks' fascination with their art
+                            and mythology. During the Renaissance period,
+                            Italian Majolica flourished as a symbol of
+                            ceramics' invaluable role in Europe, particularly
+                            noted for its bright colours and intensely detailed
+                            designs. The Wedgwood porcelain of 18th-century
+                            Britain, which embodied neoclassicism and the
+                            highest quality, was one of the most sought-after
+                            items by the European aristocracy.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-nav">
+                <div class="nav-item">
+                    <a href="history.html" style="text-decoration: none; color: inherit;">
+                        <img src="images/8fe7d0a985c463a42a355ecbe663efb.jpg" alt="History Icon" class="nav-icon">
+                        <span class="nav-text">HISTORY</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="technique.html" style="text-decoration: none; color: inherit;">
+                        <img src="images/4e58466d01d37d915c4a3f2cb57386a.jpg" alt="Techniques Icon" class="nav-icon">
+                        <span class="nav-text">TECHNIQUES</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="ceramics.html" style="text-decoration: none; color: inherit;">
+                        <img src="images/ca49725b42a9807edc9852532d0b6f0.jpg" alt="Beginner's Guide Icon" class="nav-icon">
+                        <span class="nav-text">BEGINNER'S GUID</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="works-inspiration.html" style="text-decoration: none; color: inherit;">
+                        <img src="images/5ac4f509b1f6b195889312627dc57ea.jpg" alt="Works & Inspiration Icon" class="nav-icon">
+                        <span class="nav-text">WORKS & INSPIRATIO</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <div class="contact-info">
+                    <a href="mailto:lis@ocaud.ca" class="contact-link">lis@ocaud.ca</a>
+                    <div class="school-name">OCAD university</div>
+                </div>
+                <div class="footer-line"></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

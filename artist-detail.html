@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceramic & Art - Aman Khanna</title>
+    <link rel="stylesheet" href="common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Highgate:wght@900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Architects Daughter', cursive;
+            background: url('images/texture-bg.jpg') repeat;
+            background-attachment: fixed;
+            color: #333;
+            width: 100%;
+            
+            margin: auto;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* artist details page */
+        .main-content {
+            display: flex;
+            align-items: end;
+            padding: 20px;
+
+            position: relative;
+        }
+
+        .back-button {
+            position: absolute;
+            left: 52px;
+            top: 80px;
+            padding: 8px 20px;
+            border: 1px solid #000;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            background: #fff;
+            z-index: 2;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .back-button::before {
+            content: '';
+            position: absolute;
+            top: -81px;
+            left: 50%;
+            width: 1px;
+            height: 81px;
+            background-color: #000;
+            transform: translateX(-50%);
+        }
+
+        .artist-info {
+            width: 50%;
+            padding: 40px;
+            padding-top: 80px;
+        }
+
+        .artist-name {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 32px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .artist-bio {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .artwork-display {
+            width: 50%;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .artwork-image {
+            max-width: 100%;
+            height: 588px;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .artist-info, .artwork-display {
+                width: 100%;
+                padding: 20px;
+            }
+            
+            .artist-info {
+                padding-top: 60px;
+            }
+        }
+
+        /* gallery */
+        .gallery-section {
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            flex: 1;
+            height: 217px;
+            max-width: 33%;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-image:hover {
+            transform: scale(1.02);
+        }
+
+        @media (max-width: 768px) {
+            .gallery-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .gallery-item {
+                max-width: 90%;
+                height: 217px;
+            }
+        }
+
+        /* add hover effect */
+        .back-button:hover {
+            background-color: #000;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-banner">
+        <div class="banner-content">
+            <!-- group 1 -->
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <!-- group 2 -->
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <!-- group 3 -->
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+            <div class="banner-item">Ceramic & Art <img src="images/logo.png" alt="Icon" class="banner-icon"></div>
+        </div>
+    </div>
+    
+    <header>
+        <div class="logo">Ceramic</div>
+        <nav>
+            <div class="menu-button">MENU</div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="index.html">HOME</a></li>
+                    <li class="menu-item"><a href="history.html">HISTORY</a></li>
+                    <li class="menu-item"><a href="technique.html">TECHNIQUES</a></li>
+                    <li class="menu-item"><a href="ceramics.html">BEGINNER'S GUIDE</a></li>
+                    <li class="menu-item"><a href="works-inspiration.html">WORKS & INSPIRATIC</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="main-content">
+        <a href="works-inspiration.html" class="back-button">BACK</a>
+
+        <div class="artist-info">
+            <h1 class="artist-name">AMAN KHANNA</h1>
+            <p class="artist-bio">
+                Aman Khanna, an Indian ceramic artist, has CLAYMEN as one of his series, 
+                which has gained international credit for minimalism and the emotionally 
+                resonant figurative sculptures. These clumps of free-formed hand-built 
+                clay, with characteristics such as round disc faces, distorted physiognomy, 
+                and textured surfaces, help probe into a variety of human conditions and 
+                behavior ranging from loneliness to connectivity. Referencing traditional 
+                crafts yet telling modern tales, his pieces frequently incorporate these 
+                layers of meaning: environmental fragility and loss through a sense of 
+                isolation. The CLAYMEN sculptures resonate with both fun and intensity, 
+                pushing the audience to be part of the story, to project their own 
+                narratives into the uncomplicated abstract forms.
+            </p>
+        </div>
+
+        <div class="artwork-display">
+            <img  src="images/c5ccc844d0d0bda586d71d923266a3a.png" alt="Aman Khanna Claymen Sculpture" class="artwork-image">
+        </div>
+    </div>
+    
+    <div class="gallery-section">
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <video controls src="images/1b85b219169cb58151701ae1c9d16a2d.mp4" alt="陶瓷制作过程" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/e2232da50240c3654396b18c38e2762.png" alt="陶瓷作品展示" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img style="width: 200px;" src="images/212c7bff2edba3f883ea26239eed569.png" alt="陶瓷面具系列" class="gallery-image">
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
